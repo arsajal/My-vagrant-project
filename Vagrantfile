@@ -4,7 +4,7 @@ Vagrant.configure("2") do |config|
 
   (1..num_vms).each do |i|
     config.vm.define "centos-vm-#{i.to_s.rjust(2,'0')}" do |vm|
-      vm.vm.box = "Centos-Template"
+      vm.vm.box = "Centos-Template-Updated"
       vm.vm.hostname = "centos-vm-#{i.to_s.rjust(2,'0')}"
 
       # Static IP with unique MAC
